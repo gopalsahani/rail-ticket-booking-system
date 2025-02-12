@@ -7,4 +7,4 @@ DB_PASS=
 DB_NAME=rail
 
 
-and the use postman for api calling and in headers of postman write bearer token-detail
+and the use postman for api calling and in headers of postman write authorization: bearer token-detail
