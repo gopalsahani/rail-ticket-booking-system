@@ -5,7 +5,7 @@ const { pool } = require("../config/db");
 
 const router = express.Router();
 
-//  Register User
+//  Register 
 router.post("/register", async (req, res) => {
     try {
         const { name, email, password, role } = req.body;
@@ -24,7 +24,7 @@ router.post("/register", async (req, res) => {
     }
 });
 
-// Login User
+// Login 
 router.post("/login", async (req, res) => {
     try {
         const { email, password } = req.body;
