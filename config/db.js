@@ -1,14 +1,12 @@
 const mysql = require("mysql2");
 
-// Create a MySQL connection pool
 const pool = mysql.createPool({
     host: "localhost",
     user: "",
     password: "",
     database: "",
     waitForConnections: true,
-    connectionLimit: 10, // Adjust based on your needs
+    connectionLimit: 10, 
     queueLimit: 0
-}).promise(); // Enables async/await for queries
-
+}).promise();  
 module.exports = { pool };
