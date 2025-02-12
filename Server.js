@@ -15,8 +15,8 @@ app.use(express.json());
 
 const PORT = process.env.PORT || 8080;
 
-app.use("/api/auth",require("./AuthRoutes"));  
-app.use("/api/train",require("./Trainroutes"));
+app.use("/api/auth",require("./routes/AuthRoutes"));  
+app.use("/api/train",require("./routes/Trainroutes"));
 
 const connectDB = async () => {
     try {
